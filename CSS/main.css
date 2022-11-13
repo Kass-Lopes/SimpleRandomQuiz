@@ -1,0 +1,245 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+@font-face{
+	src: url('../FONTS/Montserrat-Regular.otf');
+	font-family: 'Montserrat';
+}
+body{
+	height: 100vh;
+	display: flex;
+	background: #333c3d;
+	justify-content: center;
+	align-items: center;
+}
+body main{
+	background: #333c3d;
+	flex-direction: column;
+	width: 320px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	box-shadow: 20px 20px 60px #141818,
+				-20px -20px 60px #526062;
+}
+main section .CampoPergunta{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	background: #333c3d;
+	width: 90%;
+	align-items: center;
+	margin: 1rem 0;
+	height: 150px;
+	border-radius: 15px;
+	flex-direction: column;
+	box-shadow: 10px 10px 29px #141818,
+				-10px -10px 29px #526062;
+}
+main section .CampoPergunta::after{
+	content: attr(data-content);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	width: 60%;
+	height: 15px;
+	top: 0;
+	position: absolute;
+	background: rgba(0,255,255,.5);
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+main section .CampoPergunta p{
+	font-family: 'Montserrat';
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: white;
+}
+main section{
+	display: flex;
+	justify-content: center;
+	background: transparent;
+	border-radius: 50%;
+}
+.buttons .AlternativaBtn{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: transparent;
+	padding: 0 0 1rem;
+	width: 90%;
+}
+.buttons .AlternativaBtn .Btns{
+	margin: 0.3rem 0;
+	width: 100%;
+	height: 55px;
+	border-radius: 100px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	position: relative;
+	border: none;
+	background: #333c3d;
+	box-shadow: -5px 16px 29px #141818,
+				-5px 16px 29px #526062;
+	color: white;
+}
+.btnA::after{
+	content: 'A';
+	position: absolute;
+	background: #333c3d;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	left: 8px;
+	top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	font-weight: bold;
+	box-shadow: inset -10px -10px 30px #141818,
+				 inset 10px 10px 30px #526062;
+}
+.btnB::after{
+	content: 'B';
+	position: absolute;
+	background: #333c3d;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	left: 8px;
+	top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	font-weight: bold;
+	box-shadow: inset -10px -10px 30px #141818,
+				 inset 10px 10px 30px #526062;
+}
+.btnC::after{
+	content: 'C';
+	position: absolute;
+	background: #333c3d;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	left: 8px;
+	top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	font-weight: bold;
+	box-shadow: inset -10px -10px 30px #141818,
+				 inset 10px 10px 30px #526062;
+}
+.btnD::after{
+	content: 'D';
+	position: absolute;
+	background: #333c3d;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	left: 8px;
+	top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	font-weight: bold;
+	box-shadow: inset -10px -10px 30px #141818,
+				 inset 10px 10px 30px #526062;
+}
+.buttons .AlternativaBtn .Btns:hover{
+	transform: scale(1.099);
+	transition: 1s;
+}
+footer{
+	padding: 1rem;
+	width: 90%;
+	margin: 0px 1rem 0px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+}
+main .campoTempo{
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	background: transparent;
+	margin: 0 1rem 0;
+}
+main section .Tempo{
+	position: relative;
+	border: solid 2px #333c3d;
+	height: 13px;
+	width: 100%;
+	border-radius: 50px;
+	margin-bottom: 10px;
+	box-shadow: inset 15px 15px 25px #141818,
+				inset -15px -15px 25px #526062; 
+}
+
+.Refresh:after{
+	animation: animate 31s infinite linear;
+	content: '';
+	position: absolute;
+	border-radius: 50px;
+	width: 100%;
+	height: 100%;
+	background: cyan;
+	box-shadow: inset 5px 5px 10px #eef0f1,
+				inset 5px 5px 10px #141818;
+}
+footer p{
+	font-family: 'Montserrat';
+	background: transparent;
+	text-align: center;
+}
+footer .icons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 50px;	
+}
+footer .icons div{
+	margin: 0 5px;
+	width: 30px;
+	height: 30px;
+}
+footer div img{
+	width: 100%;
+	height: 100%;
+}
+@keyframes animate{
+	to{
+		width: 0%;
+	}
+}
+@media (max-width: 912px){
+	body main{
+		width: 90%;
+		position: relative;
+	}
+	main section .CampoPergunta{
+		margin: 1.5rem 0;
+	}
+	main section .CampoPergunta::after{
+		height: 15px;
+		width: 60%;
+	}
+	.buttons .AlternativaBtn .Btns{
+		margin: .6rem 0;
+		height: 65px;
+	}
+	.buttons .AlternativaBtn .Btns::after{
+		position: absolute;
+		top: 15px;
+		background: cyan;
+	}
+}
