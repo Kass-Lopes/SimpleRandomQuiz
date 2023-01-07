@@ -175,7 +175,7 @@ as questões e as opções*/
 					clearInterval(PararTempo)
 					clearTimeout(PararTimeout)
 
-					alert(`PARABENS E VOCÊ ACERTOU AS TODAS AS QUESTÕES E VENCEU!!!`)
+					alert(`PARABENS, VOCÊ ACERTOU TODAS AS QUESTÕES E VENCEU!!!`)
 
 				}
 				
