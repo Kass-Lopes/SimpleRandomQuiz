@@ -153,10 +153,6 @@ main section{
 	box-shadow: inset -10px -10px 30px #141818,
 				 inset 10px 10px 30px #526062;
 }
-.buttons .AlternativaBtn .Btns:hover{
-	transform: scale(1.099);
-	transition: 1s;
-}
 footer{
 	padding: 1rem;
 	width: 90%;
